@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1037686612920",
+    "firebase_url": "https://medipass-dae34.firebaseio.com",
+    "project_id": "medipass-dae34",
+    "storage_bucket": "medipass-dae34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037686612920:android:5c012c1c99e94805",
+        "android_client_info": {
+          "package_name": "com.medipass.medipass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037686612920-a8jc8dhstika10k3khlk6h1uog3koc88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medipass.medipass",
+            "certificate_hash": "9ed63e6d86d5ea245b5f04fcca1213cecd1fe3ea"
+          }
+        },
+        {
+          "client_id": "1037686612920-39mksdh69j0e3mrf1qo8hq1jo3jc030e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL9v6Rdn_v07eJcbAEcMGYVv9xtb4Wl7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037686612920-39mksdh69j0e3mrf1qo8hq1jo3jc030e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

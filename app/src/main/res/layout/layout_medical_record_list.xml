@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mRecCV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="12dp"
+        app:cardMaxElevation="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:divider="@color/colorWhiteTransparent"
+        android:dividerHeight="0.0px"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:elevation="8dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tooth_ic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeMaxTextSize="16sp"/>
+
+            <TextView
+                android:id="@+id/recTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Records"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="left"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeMaxTextSize="16sp"/>
+
+            <TextView
+                android:id="@+id/recDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/titleTV"
+                android:text="Medical Records"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeMaxTextSize="16sp"/>
+
+            <Button
+                android:id="@+id/viewRecBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:text="View Medical Record"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

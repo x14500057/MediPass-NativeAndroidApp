@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/anim_bg_gradient"
+    android:id="@+id/myLayout">
+
+    <!--<Button-->
+        <!--android:id="@+id/proceedBtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:text="proceed"-->
+        <!--android:elevation="20dp"-->
+        <!--android:background="@drawable/mybutton"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="10dp"-->
+
+        <!--/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="NFC"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"/>
+
+    <TextView
+        android:id="@+id/nfcStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Please enable NFC"
+        android:textStyle="normal"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <RelativeLayout
+
+        android:id="@+id/scannerRL"
+        android:layout_height="700dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-100dp"
+        android:gravity="center"
+        android:visibility="invisible">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/emergCont"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:background="@color/colorWhite"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                app:cardCornerRadius="30sp"
+                android:elevation="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp">
+
+                <!--<pl.droidsonroids.gif.GifImageView-->
+
+                    <!--android:id="@+id/scanIllustrationView"-->
+                    <!--android:layout_width="400dp"-->
+                    <!--android:layout_height="250dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="180dp"-->
+                    <!--android:layout_marginEnd="0dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:visibility="visible"-->
+                    <!--android:src="@drawable/scanillustration1"/>-->
+
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Please Scan NFC Wearable"
+                    android:textColor="@color/colorBlueS5"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/medikeyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+
+                <Button
+                    android:id="@+id/proceedBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="proceed"
+                    android:elevation="50dp"
+                    android:background="@drawable/mybutton_disabled"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="450dp"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+            <View
+
+                android:layout_alignParentTop="true"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circle"
+                android:elevation="15dp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+
+            android:id="@+id/scanGIF"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:elevation="15dp"
+            android:visibility="visible"
+            android:src="@drawable/scan_ring"/>
+
+        <pl.droidsonroids.gif.GifImageView
+
+            android:id="@+id/successTickGIF"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:elevation="15dp"
+            android:visibility="gone"
+            android:src="@drawable/success_tick"/>
+
+        <ImageView
+
+            android:id="@+id/successTN"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:elevation="15dp"
+            android:visibility="gone"
+            android:src="@drawable/success_tick_tn"/>
+
+
+
+
+
+        <View
+
+            android:layout_alignParentTop="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_ring"
+            android:elevation="15dp"/>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueS4"
+    tools:context=".MapBoxExample">
+
+    <RelativeLayout
+        android:id="@+id/detailsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:elevation="15dp"
+        android:fadingEdgeLength="50dp"
+        android:background="@drawable/emerg_container_details">
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Emergency"
+            android:elevation="15dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/colorWhite"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/title"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/detailsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:text="Name:  Paul Byrne"
+            android:elevation="15dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="normal"
+            android:textColorHint="@color/colorWhite"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-70dp"
+        mapbox:mapbox_cameraTilt="50.25"
+        mapbox:mapbox_cameraZoom="15"
+        mapbox:mapbox_cameraZoomMax="15"
+        mapbox:mapbox_cameraZoomMin="7"
+        mapbox:mapbox_uiRotateGestures="false" />
+
+
+</RelativeLayout>

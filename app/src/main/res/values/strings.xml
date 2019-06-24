@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MediPass</string>
+    <string name="app_slogan">Your E-Medical Passport</string>
+    <string name="home_pin_head">Enter your MAC digits</string>
+    <string name="home_login_trouble"><u>Trouble logging in?</u></string>
+    <string name="emergency_title">Emergency Services</string>
+    <string name="emergency_step1">Please scan Medi-Ring</string>
+    <string name="emergency_step1_instructions">1. Please scan within 3-4 centimetres.</string>
+    <string name="scan_step1">\u2022 Please make sure NFC is enabled.</string>
+    <string name="scan_step2">\u2022 Please hold ring to the back of device.</string>
+    <string name="login_signUp"><u>Dont have an account?</u></string>
+    <string name="signUp_login"><u>Already have an account?</u></string>
+    <string name="login"><u>Login</u></string>
+    <string name="register"><u>Register</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_emergency">Emergency</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+    <string name="access_token">pk.eyJ1IjoicGF1bGJ5cm5ldyIsImEiOiJjanNldHZsaHYxODd5M3lxY251MzZudDFjIn0.65IYck_HErk2CGlQtnJ1Ig</string>
+</resources>
